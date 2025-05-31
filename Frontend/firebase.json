@@ -1,0 +1,40 @@
+{
+  "hosting": {
+    "site": "restoping",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "src/api.js**",
+        "destination": "https://laporan-service.vercel.app/api**"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "src/api.js",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "https://restoping.web.app"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET, POST, PUT, DELETE, OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Authorization"
+          }
+        ]
+      }
+    ]
+  }
+}
