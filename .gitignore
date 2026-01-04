@@ -1,6 +1,21 @@
-frontend/node_modules/
+# Dependencies
+node_modules/
 backendex/node_modules/
+frontend/node_modules/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# IDEs and Editors
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Project Specific
 frontend/public/js/
 frontend/public/css/
-frontend/public/
-

@@ -6,11 +6,20 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+firebase-debug.log
 
+# Dependencies
 node_modules
 dist
 dist-ssr
 *.local
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.sample
 
 # Editor directories and files
 .vscode/*
